@@ -22,16 +22,22 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/meals/share/page": [
+    "/_not-found/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/meals/share/page.css",
-      "static/chunks/app/meals/share/page.js"
+      "static/chunks/app/_not-found/page.js"
     ],
-    "/meals/share/error": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/meals/share/error.js"
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
+    ],
+    "/meals/[mealSlug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/meals/[mealSlug]/page.css",
+      "static/chunks/app/meals/[mealSlug]/page.js"
     ]
   }
 }

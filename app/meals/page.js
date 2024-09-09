@@ -5,6 +5,13 @@ import MealsGrid from "@/components/meals/meals-grid";
 import { getMeals } from "@/lib/meals";
 import { Suspense } from "react";
 
+
+// Generate Metadata function is used to generate metadata for this page
+export const metadata = {
+  title: "All Meals",
+  description: "Choose your favorite recipe and cook it yourself. It is easy and fun!",
+};
+
 async function Meals() {
   const meals = await getMeals();
   return <MealsGrid meals={meals} />;
